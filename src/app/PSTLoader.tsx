@@ -1,12 +1,12 @@
 "use client";
 
 import { FileBuffer } from '@/file/FileBuffer';
-import { readHeader } from '@/pst/Header';
+import { Header, readHeader } from '@/pst/Header';
 import { ChangeEvent, ChangeEventHandler, useEffect, useState } from 'react';
 
 class PST {
     private fileBuffer: FileBuffer | null = null
-    public header: any;
+    public header: Header | null = null;
 
     public async load(file: File) {
         console.log("pst loading");

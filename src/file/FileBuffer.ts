@@ -23,7 +23,7 @@ export class FileBuffer {
     private readonly cache: Map<string, CacheEntry> = new Map();
     private readonly cacheOrder: string[] = []; // Pour conserver l'ordre des clés
     private cacheSize = 0;
-    private static readonly MAX_CACHE_SIZE = 200 * 1024 * 1024; // exemple de taille maximale: 50 Mo
+    private static readonly MAX_CACHE_SIZE = 200 * 1024 * 1024; // exemple de taille maximale: 200 Mo
 
     /**
      * Initializes a new instance of the FileBuffer class.
